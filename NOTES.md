@@ -146,3 +146,11 @@ Cleaned response from Claude for risk flagging: [
   ...
 ]
 ```
+
+#### The print results in `search_chunks()`
+
+`print("Search results from ChromaDB:", results)`:
+
+```
+Search results from ChromaDB: {'ids': [['chunk_7', 'chunk_10', 'chunk_1']], 'embeddings': None, 'documents': [['Agreement for audit, examinations, excerpts, and transactions...]], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[None, None, None]], 'distances': [[1.5389454364776611, 1.615662693977356, 1.675484299659729]]}
+```

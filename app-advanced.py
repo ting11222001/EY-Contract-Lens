@@ -57,7 +57,7 @@ def search_chunks(query, collection, n=3):
         query_embeddings=[embedding],   # compare this question vector against all stored chunk vectors
         n_results=n                     # return the 3 closest matches
     )
-    print("Search results from ChromaDB:", results)     # print the raw ChromaDB response to the terminal for debugging, includes matched chunk texts and distance scores
+    # print("Search results from ChromaDB:", results)     # print the raw ChromaDB response to the terminal for debugging, includes matched chunk texts and distance scores
     return results["documents"][0]      # ChromaDB wraps results in a nested list. [0] gets the first query's results, which is a plain list of 3 chunk strings
 
 
